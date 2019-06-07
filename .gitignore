@@ -1,0 +1,6 @@
+### JetBrains IDEs
+.idea/
+
+### Bazel
+bazel-*
+.bazelrc.user
