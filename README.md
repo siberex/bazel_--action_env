@@ -1,3 +1,7 @@
+### Related isssue
+
+https://github.com/bazelbuild/bazel/issues/8578
+
 ### Bazel version
 
 ```bash
