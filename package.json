@@ -1,0 +1,14 @@
+{
+    "name": "action_env_test",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazel": "latest",
+        "@bazel/ibazel": "latest",
+        "@bazel/buildifier": "latest"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    }
+}
