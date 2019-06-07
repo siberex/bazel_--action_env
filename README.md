@@ -1,3 +1,4 @@
+### Bazel version
 
 ```bash
 bazel version
@@ -8,6 +9,9 @@ cat .bazelrc
 # run --action_env=HELLO=WORLD
 # test --test_env=HELLO=WORLD
 ```
+
+
+### Go toolchain
 
 ```bash
 bazel run //:go
@@ -20,3 +24,17 @@ bazel test //:go_test --test_env=HELLO=WORLD
 # //:go_test   PASSED
 ```
 
+
+### JS toolchain
+
+```bash
+bazel run //:js
+bazel run //:js --action_env=HELLO=WORLD
+# HELLO env mismatch: "undefined"
+
+bazel test //:js_test
+bazel test //:js_test --test_env=HELLO=WORLD
+# Hello, WORLD
+# //:js_test   PASSED
+
+```
