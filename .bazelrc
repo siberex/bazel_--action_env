@@ -1,0 +1,13 @@
+#@IgnoreInspection BashAddShebang
+
+# Env
+
+build --action_env=HELLO=WORLD
+run --action_env=HELLO=WORLD
+test --test_env=HELLO=WORLD
+
+
+# Options
+
+common --color=yes
+test --verbose_failures --test_output=all
